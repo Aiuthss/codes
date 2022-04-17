@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Unrestricted C:\RNA-seq_data\codes\docker_run.ps1
