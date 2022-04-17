@@ -2,7 +2,7 @@ library(biomaRt)
 library(tidyverse)
 
 args <- commandArgs(trailingOnly = T)
-setwd(paste0("D:/RNA-seq_data/", args[1]))
+setwd(paste0("/home/D/RNA-seq_archives/", args[1]))
 RUN.list <- read.table("RUN.list", header = 1)[[1]]
 df = read_table(paste0(RUN.list[1], "/", RUN.list[1], "_RSEM.genes.results"))[c('gene_id', 'TPM')]
 colnames(df) = c('gene_id', RUN.list[1])
