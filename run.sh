@@ -166,7 +166,7 @@ else
 fi
 
 # ls -l /home/C/working/${pjname} | grep ^- | awk '{print $9}' | xargs -I {} mv {} /home/D/RNA-seq_archives/${pjname}
-# mv -r /home/C/working/${pjname}/* /home/D/RNA-seq_archives/${pjname}
+mv -r /home/C/working/${pjname}/* /home/D/RNA-seq_archives/${pjname}
 rm -r /home/C/working/${pjname}
 
 echo "result.csv exported to /mnt/d/RNA-seq_data/${pjname}"
